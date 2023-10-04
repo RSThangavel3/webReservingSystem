@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  php-apache:
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      -./web:/var/WWW/html
+      -./config:/var/WWW/config
+    restart: always
